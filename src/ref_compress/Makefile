@@ -13,6 +13,9 @@ DISTFILES =
 DISTFILES += Makefile
 DISTFILES += $(EXTRA_DIST)
 
+CC = gcc
+CFLAGS = -Wall
+
 default: all
 
 jsonlz4: jsonlz4.o ../lz4.o

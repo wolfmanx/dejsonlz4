@@ -13,6 +13,9 @@ DISTFILES =
 DISTFILES += Makefile
 DISTFILES += $(EXTRA_DIST)
 
+CC = gcc
+CFLAGS = -Wall
+
 default: all
 
 dejsonlz4: dejsonlz4.o lz4.o
